@@ -1,7 +1,7 @@
 import { createMachine, state, transition } from 'robot3';
 import { useMachine } from '../machine.js';
 import React from 'react';
-import { act } from './test-utils';
+import { act } from './test-utils.js';
 import htm from 'https://unpkg.com/htm@2.2.1/dist/htm.module.js';
 import { render, unmountComponentAtNode } from './react-dom.js';
 
