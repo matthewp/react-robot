@@ -1,12 +1,13 @@
 {
   "name": "react-robot",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.1.0",
+  "description": "React hooks for Robot finite state machines",
   "main": "machine.js",
   "module": "machine.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "server": "http-server -p 1965",
+    "test": "node-qunit-puppeteer http://localhost:1965/test/test.html 10000"
   },
   "files": [
     "machine.js"
@@ -15,8 +16,11 @@
     "type": "git",
     "url": "git+https://github.com/matthewp/react-robot.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "React",
+    "Finite state machine"
+  ],
+  "author": "Matthew Phillips <matthew@matthewphillips.info>",
   "license": "BSD-2-Clause",
   "bugs": {
     "url": "https://github.com/matthewp/react-robot/issues"
@@ -24,6 +28,14 @@
   "homepage": "https://github.com/matthewp/react-robot#readme",
   "peerDependencies": {
     "react": "^16.9.0",
+    "robot3": "^0.1.0"
+  },
+  "dependencies": {
+    "robot-hooks": "^0.1.0"
+  },
+  "devDependencies": {
+    "http-server": "^0.11.1",
+    "node-qunit-puppeteer": "^1.0.13",
     "robot3": "^0.1.0"
   }
 }
