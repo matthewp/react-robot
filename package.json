@@ -1,0 +1,29 @@
+{
+  "name": "react-robot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "machine.js",
+  "module": "machine.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "machine.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthewp/react-robot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/matthewp/react-robot/issues"
+  },
+  "homepage": "https://github.com/matthewp/react-robot#readme",
+  "peerDependencies": {
+    "react": "^16.9.0",
+    "robot3": "^0.1.0"
+  }
+}
