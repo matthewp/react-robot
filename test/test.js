@@ -30,8 +30,6 @@ QUnit.module('useMachine', hooks => {
 
     function App() {
       const [current, send] = useMachine(machine);
-
-      console.log('ctx', current.context);
       
       return html`
         <button type="button" onClick=${() => send('next')}>
