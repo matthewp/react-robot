@@ -1,6 +1,6 @@
-# robot-hooks
+# react-robot
 
-React hooks for use with [Robot](https://thisrobot.life/).
+React hooks for use with [Robot](https://thisrobot.life/) finite state machines.
 
 ## Installation
 
