@@ -1,26 +1,13 @@
 # react-robot
 
-React hooks for use with [Robot](https://thisrobot.life/) finite state machines.
+[React](https://reactjs.org/) hooks for use with [Robot](https://thisrobot.life/) finite state machines.
 
-## Installation
-
-Via npm:
-
-```shell
-npm install react-robot --save
-```
-
-Or Yarn:
-
-```shell
-yarn add react-robot
-```
-
-## Usage
+See documentation on [the website](https://thisrobot.life/integrations/react-robot.html).
 
 ```js
 import { useMachine } from 'react-robot';
 import React from 'react';
+import { createMachine, state, transition } from 'robot3';
 
 const machine = createMachine({
   one: state(
@@ -39,6 +26,12 @@ function App() {
   `;
 }
 ```
+
+## 📚 [Documentation](https://thisrobot.life/integrations/react-robot.html)
+
+* Please star [the repository](https://github.com/matthewp/react-robot) on GitHub.
+* [File an issue](https://github.com/matthewp/react-robot/issues) if you find a bug. Or better yet...
+* [Submit a pull request](https://github.com/matthewp/react-robot/compare) to contribute.
 
 ## License
 
