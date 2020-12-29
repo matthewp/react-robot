@@ -2,12 +2,13 @@
   "name": "react-robot",
   "version": "0.2.1",
   "description": "React hooks for Robot finite state machines",
-  "main": "machine.js",
+  "main": "dist/machine.js",
   "module": "machine.js",
   "type": "module",
   "scripts": {
     "server": "http-server -p 1965",
-    "test": "node-qunit-puppeteer http://localhost:1965/test/test.html 10000"
+    "test": "node-qunit-puppeteer http://localhost:1965/test/test.html 10000",
+    "build": "rollup -d dist -f cjs machine.js"
   },
   "files": [
     "machine.js",
@@ -37,6 +38,7 @@
   "devDependencies": {
     "http-server": "^0.11.1",
     "node-qunit-puppeteer": "^1.0.13",
-    "robot3": "^0.2.3"
+    "robot3": "^0.2.3",
+    "rollup": "^2.8.2"
   }
 }
