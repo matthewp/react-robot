@@ -5,7 +5,7 @@ declare module 'react-robot' {
     initialContext?: M['context']
   ): [
     M['state'] & {context: M['context']},
-    SendFunction<keyof M['context']>,
+    SendFunction<keyof M['states']>,
     Service<typeof machine>
   ];
 }
